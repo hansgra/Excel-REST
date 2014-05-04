@@ -1,0 +1,342 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Base */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font: 15px Helvetica, arial, freesans, clean, sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 15px;
+  cursor: text;
+}
+h1 {
+  font-size: 2.5em;
+  border-bottom: solid 1px #ddd;
+}
+h2 {
+  font-size: 2em;
+  border-bottom: solid 1px #eee;
+}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: 1em;}
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+code, pre {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 12px;
+}
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+code {
+  margin: 0;
+  border: solid 1px #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 0;
+}
+code:before, code:after {
+  content: "\00a0";
+  letter-spacing: -0.2em;
+}
+pre > code {
+  border: none;
+  background-color: none;
+  border-radius: none;
+}
+pre > code:before, pre > code:after {
+  content: "";
+  letter-spacing: 1em;
+}
+
+/* Layout */
+.l-container {
+  padding: 0 50px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Header */
+.header {padding-top: 15px;}
+.header-title {margin-top: 0;}
+
+/* Content */
+.content {}
+
+/* Footer */
+.footer {
+  padding-bottom: 15px;
+}
+
+/* 
+  Screen size breakpoints:
+
+  Extra-small: < 768px
+  Small: >= 768px
+  Medium: >= 992px
+  Large: >= 1200px
+*/
+
+/* Extra-small */
+@media only screen and (max-width: 767px) {
+  .l-container {
+    padding: 0 15px;
+  }
+}
+
+/* Small */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* Medium = Default */
+
+/* Large */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* High-resolution */
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers: h5bp.com/u
+ */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * {
+      background: transparent !important;
+      color: #000 !important; /* Black prints faster: h5bp.com/s */
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
