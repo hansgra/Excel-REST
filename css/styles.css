@@ -87,8 +87,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font: 15px Helvetica, arial, freesans, clean, sans-serif;
-  line-height: 1.7;
+  font: 16px Helvetica, arial, freesans, clean, sans-serif;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -152,14 +152,122 @@ pre > code:before, pre > code:after {
   max-width: 900px;
 }
 
-/* Header */
-.header {padding-top: 15px;}
-.header-title {margin-top: 0;}
+/* Modules */
+.header {
+  padding-top: 15px;
+}
+  .header .logo {
+    font-size: 2em;
+    line-height: 1.2;
+    float: left;
+  }
 
-/* Content */
+.logo {
+  font-weight: bold;
+}
+  .logo-excel {
+    color: #008A00;
+  }
+  .logo-dash {
+    font-weight: normal;
+  }
+
+.horizontal-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.horizontal-nav.right {
+  float: right;
+}
+.horizontal-nav > .nav-item {
+  float: left;
+  margin-right: 0.8em;
+  padding: 0;
+}
+.horizontal-nav > .nav-item:last-child {
+  margin-right: 0;
+}
+.horizontal-nav .link {
+  text-decoration: none;
+  padding: 2px 0;
+  color: #222;
+}
+.horizontal-nav .link:hover {
+  border-bottom: solid 1px;
+}
+
+.main-nav > li {
+  font-size: 1em;
+  line-height: 2.4;
+}
+.download {
+  background-color: #008A00;
+  padding: 0.5em 0.75em;
+  color: #fff;
+  text-decoration: none;
+}
+.download:hover {
+  background-color: #007c00;
+}
+.issue {
+
+}
+.donate {
+  border-color: transparent;
+  background-color: transparent;
+}
+
 .content {}
 
-/* Footer */
+.main-panel {
+  width: 100%;
+}
+  .panel-item {
+    width: 33%;
+    float: left;
+  }
+  .panel-item-full {
+    width: 100%;
+  }
+  .panel-item-action {
+    margin: 4px 8px;
+    border: solid 1px #999;
+    display: block;
+    text-align: center;
+    line-height: 3;
+    text-decoration: none;
+    color: #000;
+  }
+  .panel-item-action:hover {
+    background-color: #ccc;
+  }
+  .panel-item-details {
+
+  }
+.download {
+
+}
+.submit-issue {
+
+}
+.donate {
+
+}
+.signup {
+
+}
+  #signup-email {
+    
+
+  }
+  .signup-action {
+    
+  }
+  .signup-label {
+
+  }
+
 .footer {
   padding-bottom: 15px;
 }
@@ -176,7 +284,19 @@ pre > code:before, pre > code:after {
 /* Extra-small */
 @media only screen and (max-width: 767px) {
   .l-container {
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header .logo {
+    float: none;
+  }
+  .horizontal-nav.right {
+    float: none;
+    margin-top: 0.6em;
+  }
+  .horizontal-nav > .nav-item {
+    float: none;
   }
 }
 

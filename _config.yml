@@ -1,10 +1,10 @@
 safe: false
 encoding: UTF-8
-pygments: true
+highlighter: pygments
 markdown: redcarpet
 exclude: [node_modules, credentials.txt, Gemfile, Gemfile.lock]
 
 name: Excel-REST
 baseurl: /Excel-REST
 analytics: UA-38523419-3
-tagline: "Work with web services directly from Excel (Salesforce, Google, and pretty much everything on the internet)"
+tagline: "Excel-REST makes working with complex webservices and APIs easy with Excel (Salesforce, Google, and pretty much everything on the internet)"

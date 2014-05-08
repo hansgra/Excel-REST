@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Excel-REST
-description: Excel-REST
 ---
 
-It seems like everything has a REST webservice these days and there is no reason to leave Excel out of the fun. Excel-REST is designed to make working with complex webservices easy with Excel. It includes support for authentication, making async requests, automatically converting and parsing JSON, working with cookies and headers in requests and responses, and much more.
+Excel-REST makes working with complex webservices and APIs easy with Excel. 
+It includes support for authentication, making async requests, automatically converting and parsing JSON, working with cookies and headers, and much more.
 
 Getting started
 ---------------
